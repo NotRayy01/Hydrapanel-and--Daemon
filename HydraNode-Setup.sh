@@ -2,28 +2,35 @@
 
 set -e  # Stop script on error
 
+# Display script header
+echo "🟡 GAMERYARO"
+echo "📝 Script by GAMERYARO aka NotRay"
+echo ""
+
 # Clone the HydraDAEMON repository
-echo -e "\e[35m💜 Cloning the HydraDAEMON repository...\e[0m"
+echo "💜 Cloning the Node repository..."
 git clone https://github.com/HydraLabs-beta/daemon.git
 
 # Navigate into the repository folder
-echo -e "\e[35m💜 Navigating into the DAEMON directory...\e[0m"
+echo "📂 Navigating into the DAEMON directory..."
 cd daemon
 
 # Install dependencies
-echo -e "\e[35m💜 Installing dependencies...\e[0m"
+echo "📦 Installing dependencies..."
 npm install
 
 # Ask the user for the command to run
-echo -e "\e[35m💜 Please enter the command you want to run:\e[0m"
-read -p "Command: " user_command
+echo "⌨️ Please enter the node config you want to run:"
+read -p "⚡ Command: " user_command
 
 # Execute the user-provided command with node
-echo -e "\e[35m💜 Running the command: $user_command...\e[0m"
+echo "🚀 Running the command: $user_command..."
 $user_command
 
 # Start the application
-echo -e "\e[35m💜 Starting the HydraNode application...\e[0m"
+echo "🔥 Starting the HydraNode application..."
 node .
 
-echo -e "\e[1;36m\n===================================\n      SUBSCRIBE TO GAMERYARO      \n===================================\e[0m"
+echo -e "\n==================================="
+echo -e "     📢 SUBSCRIBE TO GAMERYARO 📢     "
+echo -e "==================================="
