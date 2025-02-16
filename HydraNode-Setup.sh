@@ -18,9 +18,6 @@ npm install
 echo -e "\e[35m💜 Please enter the command you want to run:\e[0m"
 read -p "Command: " user_command
 
-# Replace http with https in the user input
-user_command=$(echo $user_command | sed 's/http:/https:/g')
-
 # Execute the user-provided command with node
 echo -e "\e[35m💜 Running the command: $user_command...\e[0m"
 $user_command
